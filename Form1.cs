@@ -14,9 +14,14 @@ namespace Binary_Search
             int[] arr = new int[10]
             { 1, 2, 4, 11, 20, 28, 48, 84, 96, 106 };
 
-            int index1 = arr.ToList().BinarySearch(20);
-            int index2 = BinarySearchIterative(arr, 20);
-            int index3 = BinarySearchRecursive(arr, 20, 0, arr.Length - 1);
+            int searchnumber = Convert.ToInt32(txtSearchNumber.Text);
+
+            //int index1 = arr.ToList().BinarySearch(20);
+            //int index2 = BinarySearchIterative(arr, 20);
+            //int index3 = BinarySearchRecursive(arr, 20, 0, arr.Length - 1);
+            int index1 = arr.ToList().BinarySearch(searchnumber);
+            int index2 = BinarySearchIterative(arr, searchnumber);
+            int index3 = BinarySearchRecursive(arr, searchnumber, 0, arr.Length - 1);
 
             //Add to Console
             Console.WriteLine("Index of 20 value in list is " + index1.ToString() + " (using .NET Framework)");

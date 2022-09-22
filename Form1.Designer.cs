@@ -32,6 +32,7 @@
             this.txt_Index1 = new System.Windows.Forms.TextBox();
             this.txt_Index2 = new System.Windows.Forms.TextBox();
             this.txt_Index3 = new System.Windows.Forms.TextBox();
+            this.txtSearchNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_Search
@@ -65,11 +66,19 @@
             this.txt_Index3.Size = new System.Drawing.Size(100, 23);
             this.txt_Index3.TabIndex = 3;
             // 
+            // txtSearchNumber
+            // 
+            this.txtSearchNumber.Location = new System.Drawing.Point(321, 28);
+            this.txtSearchNumber.Name = "txtSearchNumber";
+            this.txtSearchNumber.Size = new System.Drawing.Size(100, 23);
+            this.txtSearchNumber.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtSearchNumber);
             this.Controls.Add(this.txt_Index3);
             this.Controls.Add(this.txt_Index2);
             this.Controls.Add(this.txt_Index1);
@@ -88,5 +97,6 @@
         private TextBox txt_Index1;
         private TextBox txt_Index2;
         private TextBox txt_Index3;
+        private TextBox txtSearchNumber;
     }
 }
