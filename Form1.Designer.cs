@@ -126,5 +126,8 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button button2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }
